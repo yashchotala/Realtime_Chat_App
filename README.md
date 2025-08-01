@@ -1,42 +1,25 @@
-# ✨ Full Stack Realtime Chat App ✨
+# Chatly — MERN Real-Time Chat App 💬⚡
 
-![Demo App](/frontend/public/screenshot-for-readme.png)
+A sleek real-time chat application built with the MERN stack.
 
-[Video Tutorial on Youtube](https://youtu.be/ntKkVrQqBYY)
+## ✨ Highlights
 
-Highlights:
+- 🔐 JWT Authentication & Authorization  
+- 💬 Real-time messaging via Socket.IO  
+- 🟢 Online user status tracking  
+- 🌍 Global state via Zustand  
+- 🚫 Error handling (Client + Server)  
+- 🌙 Light & Dark Mode Support  
+- 📦 Clean UI with Tailwind CSS  
+- 🚀 Deployed for Free!
 
-- 🌟 Tech stack: MERN + Socket.io + TailwindCSS + Daisy UI
-- 🎃 Authentication && Authorization with JWT
-- 👾 Real-time messaging with Socket.io
-- 🚀 Online user status
-- 👌 Global state management with Zustand
-- 🐞 Error handling both on the server and on the client
-- ⭐ At the end Deployment like a pro for FREE!
-- ⏳ And much more!
+## 🛠️ Tech Stack
 
-### Setup .env file
+React.js | Node.js | Express.js | MongoDB | Socket.IO | Zustand | Tailwind CSS
 
-```js
-MONGODB_URI=...
-PORT=5001
-JWT_SECRET=...
+## 🔧 Setup & Run
 
-CLOUDINARY_CLOUD_NAME=...
-CLOUDINARY_API_KEY=...
-CLOUDINARY_API_SECRET=...
-
-NODE_ENV=development
-```
-
-### Build the app
-
-```shell
+```bash
+npm install
 npm run build
-```
-
-### Start the app
-
-```shell
 npm start
-```
