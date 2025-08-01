@@ -1,4 +1,4 @@
-# Chatly — MERN Real-Time Chat App 💬⚡
+# Talksy — MERN Real-Time Chat App 💬⚡
 
 A sleek real-time chat application built with the MERN stack.
 
