@@ -97,3 +97,20 @@ h2 span:nth-child(3) {
     transform: translateY(-50%) scaleY(1);
   }
 }
+h2 {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-size: 6em;
+  color: transparent;
+  font-family: 'Consolas', monospace;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* Responsive Font Size for Mobile */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 3em; /* Adjust as needed */
+  }
+}
