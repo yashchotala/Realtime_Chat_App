@@ -1,0 +1,85 @@
+.landing-wrapper {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  opacity: 1;
+  transition: opacity 1.5s ease;
+}
+
+.landing-wrapper.fade-out {
+  opacity: 0;
+}
+
+/* Hover container */
+.hover-box {
+  cursor: pointer;
+}
+
+/* Heading styles */
+h2 {
+  position: relative;
+  font-size: 6em;
+  color: transparent;
+  font-family: 'Consolas', monospace;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+/* Span layers */
+h2 span:nth-child(1),
+h2 span:nth-child(2),
+h2 span:nth-child(3) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #000000;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+/* Top half */
+h2 span:nth-child(1) {
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+}
+
+/* Bottom half */
+h2 span:nth-child(2) {
+  clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
+}
+
+/* Created By Slice (Initially Hidden) */
+h2 span:nth-child(3) {
+  top: 50%;
+  transform: translateY(-50%) scaleY(0);
+  width: 100%;
+  text-align: center;
+  background: yellow;
+  color: black;
+  font-size: 0.25em;
+  font-weight: bold;
+  letter-spacing: 0.7em;
+  padding-left: 20px;
+  margin-left: 5px;
+  transition: 0.5s;
+}
+
+/* Hover Slice Animation Trigger */
+.hover-box:hover span:nth-child(1) {
+  transform: translateY(-20px);
+}
+
+.hover-box:hover span:nth-child(2) {
+  transform: translateY(20px);
+}
+
+.hover-box:hover span:nth-child(3) {
+  transform: translateY(-50%) scaleY(1);
+}
