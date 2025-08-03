@@ -83,3 +83,17 @@ h2 span:nth-child(3) {
 .hover-box:hover span:nth-child(3) {
   transform: translateY(-50%) scaleY(1);
 }
+
+@media (hover: none) {
+  h2 span:nth-child(1) {
+    transform: translateY(-20px);
+  }
+
+  h2 span:nth-child(2) {
+    transform: translateY(20px);
+  }
+
+  h2 span:nth-child(3) {
+    transform: translateY(-50%) scaleY(1);
+  }
+}
